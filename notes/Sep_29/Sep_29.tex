@@ -1,0 +1,209 @@
+\documentclass{article}
+
+
+\usepackage[margin=0.6in]{geometry}
+\usepackage{amssymb, amsmath, amsfonts}
+\usepackage{mathtools}
+\usepackage{physics}
+\usepackage{enumerate}
+\usepackage{array}
+\newcommand{\Rl}{\mathbb{R}}
+\newcommand{\f}[3]{#1\ :\ #2 \rightarrow #3}
+
+\title{PMI 214 Notes - ``Epidemiology of Canine Heartworm (\emph{Dirofilaria immitis})''}
+\author{Sam Fleischer - Speaker: Ben Sacks (UC Davis - Population Health and Reproduction Department)}
+\date{September 29, 2016}
+
+\begin{document}
+    \maketitle
+
+    \section{Key concepts}
+        \begin{itemize}
+            \item Helminth parasites: endemic, not epidemic
+            \begin{itemize}
+                \item Once they're within a host population, there may be fluctuations, but no huge eruptions
+            \end{itemize}
+            \item Environmental factors determine potential for transmission
+            \begin{itemize}
+                \item climate
+                \item host presence
+                \item vector habitat
+            \end{itemize}
+            \item Changes in the environment change that potential
+        \end{itemize}
+    \section{Why do we care about canine heartworm?}
+        \begin{itemize}
+            \item dogs
+            \begin{itemize}
+                \item mild: coughing
+                \item moderate: difficulty breathing
+                \item serious: pulmonary hypertension, caval syndrome, RSCHF
+            \end{itemize}
+            \item cats
+            \begin{itemize}
+                \item rare hosts but poor prognosis
+            \end{itemize}
+        \end{itemize}
+    \section{lifecycle}
+        \begin{itemize}
+            \item lodged in pulmonary artery
+            \item give birth to microfilaria (not eggs) which circulte in the bloodstream (300 um)
+            \item ingested by mosquito (if lucky)
+            \item mults into invective larvae
+            \item mosquito transmits to definitive host
+            \item mults some more into a reproductive adult
+        \end{itemize}
+
+    \section{At $26^\circ$}
+        \begin{itemize}
+            \item 14 - 18 days in the vector
+            \item they chill in the needle of the mosquito and sloppily fall out when mosquito bites a canid host
+        \end{itemize}
+
+    \section{In the canid}
+        \begin{itemize}
+            \item 3-12 days to L4
+            \item larger and larger
+            \item $\sim$180 days to sexual maturity
+        \end{itemize}
+
+    \section{Efficient vectors in CA}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+
+    \section{Where do we find heartworm in CA?}
+        \begin{itemize}
+            \item evidence that western tree hole mosquito is the main vector
+        \end{itemize}
+
+    \section{Coyotes are excellent sentinels}
+        \begin{itemize}
+            \item Widespread
+            \item Relatively stationary (as opposed to dogs, which travel with humans)
+            \item prophylaxis
+            \item always outdoors
+            \item high susceptibility
+        \end{itemize}
+
+    \section{two studies}
+        \begin{itemize}
+            \item high-incidence zone
+            \item building and testing a predictive spacial risk model
+        \end{itemize}
+
+    \section{What variavles influence transmission?}
+        \begin{itemize}
+            \item definitive host presense/abundance
+            \item vector presence/abundance
+            \item parasite presence
+            \item temperature
+        \end{itemize}
+
+    \section{Western treehole mosquito}
+        \begin{itemize}
+            \item feed in treeholes where water can gather
+            \item april/may: adults emerge from pupae in tree holes - photoperiod triggered
+            \item females only take 1 blood meal per clutch of eggs
+            \item most females die before taking a second blood meal, approx. 2 weeks later
+            \item some females may have 4 or 5 clutches (and blood meals) before dying at the end of summer
+            \item temperature
+            \begin{itemize}
+                \item heartworm larvae requires $>14^\circ$ to develop
+            \end{itemize}
+        \end{itemize}
+
+    \section{Questions}
+        \begin{itemize}
+            \item What limits transmission season?
+            \item how long/variable is the season?
+            \item does transmission intensity vary annually?
+        \end{itemize}
+
+    \section{How to date a transmission event?}
+        \begin{itemize}
+            \item determine heartworm age
+            \begin{itemize}
+                \item How?  use length as a proxy
+            \end{itemize}
+            \item subtract time from sampling date
+            \item arrive at date when the infective L3 entered canine host
+            \begin{itemize}
+                \item Most transmission occurs in the span of 1 month
+                \item transmission starts about 1.5 months after temperature enters desirable zone
+            \end{itemize}
+        \end{itemize}
+
+    \section{Transmission, rain, and vector abundance correlated}
+        \begin{itemize}
+            \item Vector abundance correlates with transmission and also rainfull
+        \end{itemize}
+
+    \section{Conclusions}
+        \begin{itemize}
+            \item warming determines onset of transmission
+            \item waning vector abundance ends transmission
+            \item transmission occurs within a month
+            \item precipitation affects vector abundance, which affects transmission
+        \end{itemize}
+
+    \section{How do we make broad spatial predictions?}
+        \begin{itemize}
+            \item (Epi) map parasite occurence and describe and loor for commonalities, or
+            \item (Eco) map parasite prevalence and quantify relationships with variables
+        \end{itemize}
+
+    \section{CA Risk map}
+        \begin{itemize}
+            \item heterogeneous distribution
+        \end{itemize}
+
+    \section{Modeling approach}
+        \begin{itemize}
+            \item Logistic regression
+            \item dependent var: seropositivity (0 or 1)
+            \item independent vars:
+            \begin{itemize}
+                \item temp
+                \item precipitation
+                \item distance from prime habitat
+            \end{itemize}
+        \end{itemize}
+
+    \section{Final model}
+        \begin{itemize}
+            \item HDU (+)
+            \item Precipitation (+)
+            \item distace from dense oak woodland
+            \item HDU*Precipication
+        \end{itemize}
+
+    \section{External Validation Sites}
+        \begin{itemize}
+            \item pro of noting a ton of data - extrenal validation
+        \end{itemize}
+
+    \section{Conclusions}
+        \begin{itemize}
+            \item model confirms varaibles on broad spacial scale
+            \item Locally important vectors, risk factos also matter but are not incorporated in the model
+            \item bottom line: much easier to predict ``risky'' areas instead of ``safe'' areas
+        \end{itemize}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

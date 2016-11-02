@@ -1,0 +1,82 @@
+\documentclass{article}
+
+
+\usepackage[margin=0.6in]{geometry}
+\usepackage{amssymb, amsmath, amsfonts}
+\usepackage{mathtools}
+\usepackage{physics}
+\usepackage{enumerate}
+\usepackage{array}
+\newcommand{\Rl}{\mathbb{R}}
+\newcommand{\f}[3]{#1\ :\ #2 \rightarrow #3}
+
+\title{PMI 214 Notes}
+\author{Sam Fleischer}
+\date{October 25, 2016}
+
+\begin{document}
+    \maketitle
+
+    \section{Entomological Inoculation Rate}
+        \begin{itemize}
+            \item Rate at which a person is bitten by infectious vectors per day
+            \begin{align}
+                EIR = ma\phi\theta
+            \end{align}
+            where
+            \begin{itemize}
+                \item $m$ is the number of mosquitoes
+                \item $a$ is the number of bites per day
+                \item $\phi$ is the faction of bites which are on humans
+                \item $\theta$ is the fraction of vectors which are transmitting the disease
+            \end{itemize}
+        \end{itemize}
+    \section{What is ``mathematical epidemilogy?''}
+        \begin{itemize}
+            \item based on theory of transmission process
+            \item provides a conceptual representation of what is known about the mechanisms of a system
+            \item helps identify knowledge gaps
+            \item often used for hypothesis testing (tests scenarios that cannot be easily/safely tested in nature)
+        \end{itemize}
+
+    \section{Vectorial Capacity}
+        \begin{align}
+            C = \frac{ma^2b}{-\ln p}p^n
+        \end{align}
+        $C = $ number of infective vector bites that would arise from all the mosquitoes that bite a single host on a single day
+        \begin{itemize}
+            \item $m$, $a$ same as before
+            \item $b$ is the vector competence
+            \item $n$ is the extrinsic incubation period for pathogen
+            \item $p$ is the daily mosquito survival probability
+        \end{itemize}
+
+    \section{Basic Reproductive Rate}
+        \begin{align}
+            R_0 = \frac{C}{r}
+        \end{align}
+        $R_0 = $ the avg.~number of future host infections that will arise following introduction of a single infectious host in a susceptible population
+        \begin{itemize}
+            \item $r$ is the host recovery rate... unit: $1/(\text{infectious period})$
+        \end{itemize}
+
+    \section{SIR/SEIR}
+        For hosts, susceptible $\rightarrow$ exposed $\rightarrow$ infective $\rightarrow$ removed.  For vectors, no exposed period.
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

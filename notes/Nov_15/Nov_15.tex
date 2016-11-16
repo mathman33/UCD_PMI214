@@ -1,0 +1,66 @@
+\documentclass{article}
+
+
+\usepackage[margin=0.6in]{geometry}
+\usepackage{amssymb, amsmath, amsfonts}
+\usepackage{mathtools}
+\usepackage{nicefrac}
+\usepackage{physics}
+\usepackage{enumerate}
+\usepackage{array}
+\newcommand{\Rl}{\mathbb{R}}
+\newcommand{\f}[3]{#1\ :\ #2 \rightarrow #3}
+
+\title{PMI 214 Notes - Michael Turelli}
+\author{Sam Fleischer}
+\date{November 15, 2016}
+
+\begin{document}
+    \maketitle
+
+    \begin{itemize}
+        \item Biocontrol of a human disease by blocking spread of Dengue through transmission of Wolbachia in Aedes aegypti
+        \item Wolbachia are in about half of all insects
+        \item Wolbachia can only survive in invertebrates - our immune system takes care of Wolbachia
+        \item Wolbachia blocks Zika, Dengue, Chikun, Yellow Fever
+        \item On an evolutionary time scale, Wolbachia moves between species
+        \item Phylogenies of Wolbachia and radically different than the phylogenies of the insects they inhabit
+        \item Cytoplasmic incopatability means females have a fitness advantage if they have Wolbachia
+        \begin{itemize}
+            \item Incompatible cross is uninfected female with infected male -- results in reduced number of offspring, all uninfected
+        \end{itemize}
+        \item \begin{align*}
+            p_{t+1} = \frac{p_t\qty(1 - s_f)}{1 - s_fp_t - s_hp_t\qty(1 - p_t)}
+        \end{align*}
+        where
+        \begin{itemize}
+            \item $p_t$ is the freq.~of infected adults in gen.~$t$
+            \item $H = 1 - s_h$ is the relative hatch rate from incomatible fertilizations
+            \item $F = 1 - s_f$ is the relative fecundity of infected females (conjecture)
+        \end{itemize}
+        \item CI causes bistability - an unstable equilibrium at $\hat{p} = \nicefrac{s_f}{s_h}$
+        \item Turelli worked on overlapping generations in 2010
+        \item add imperfect maternal transmission to the model: $\mu$ is the fraction of uninfected ova produced by infected females.
+        \item The spread of Wolbachia was because of CI in spite of the decrease in fitness caused by Wolbachia.
+        \item People were excited about using Wolbachia as an engine to move trans genes through populations
+        \item HOWEVER, more Wolbachia were found which did not have CI and still spread.  This means Wolbachia can be intrinsically beneficial to the insect.  This means natural populations are Fisherian, not Bartonian, waves.  The unstable equilibrium is at $0$.
+        \item Somehow, natural infections of Wolbachia have a net positive impact on fitness.  Choosing an arbitrary Wolbachia with an insect creates Bartonian waves (since it hasn't ``gone through the sieve of natural selection'').  Fisherian waves (unstable point of $0$) travel a thousand times faster than Bartonian waves.
+    \end{itemize}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,181 @@
+\documentclass{article}
+
+
+\usepackage[margin=0.6in]{geometry}
+\usepackage{amssymb, amsmath, amsfonts}
+\usepackage{mathtools}
+\usepackage{nicefrac}
+\usepackage{physics}
+\usepackage{enumerate}
+\usepackage{array}
+\newcommand{\Rl}{\mathbb{R}}
+\newcommand{\f}[3]{#1\ :\ #2 \rightarrow #3}
+
+\title{PMI 214 Notes - Final Review with Greg Lanzaro}
+\author{Sam Fleischer}
+\date{December 1, 2016}
+
+\begin{document}
+    \maketitle
+
+    \begin{itemize}
+        \item Lec. 11
+        \begin{itemize}
+            \item EIR: entomological innoculation rate
+            \begin{itemize}
+                \item $\text{EIR} = ma\phi\theta$ where
+                \begin{itemize}
+                     \item $m$ - How many mosquitoes out there? mosq/person
+                     \item $a$ - How many bites? bites/day
+                     \item $\phi$ - How many bites are on humans (how anthropophilic)? human-bites/all-bites 
+                     \item $\theta$ - How many vectors are infected? transmitting-vectors/all-vectors
+                \end{itemize}
+            \end{itemize}
+            \item Vectorial Capacity - number of infective vector bites that would arise from all the mosquitoes that bite a single host on a single day $C = \dfrac{ma^2b}{-\ln p}p^n$
+            \begin{itemize}
+                \item $a$ - bites/person/day (not the same $a$ as in EIR)
+                \item $b$ - vector competence
+                \item $n$ - extrinsiv incubation period
+                \item $p$ - vector daily survival rate
+            \end{itemize}
+            \item Basic Reproductive Rate ($R_0$) - avg. \# of future host infections that will arise following introduction of a single infectious host in a susceptible population $R_0 = C/r$ where
+            \begin{itemize}
+                \item $r$ - host recovery rate 1/infectious-perioud
+            \end{itemize}
+        \end{itemize}
+        \item Lec 12
+        \begin{itemize}
+            \item Integrated Vector Control (IVM) - think about all the availble tools for the specific vector and situation - ``a rational decision-making process for the optimal use of resources for vector control''
+            \item Behavioral Insecticide Resistance - ex: mosquitoes feeding over a range of times, kill all the ones who feed at night, going to select for ones who don't feed at night, bed nets stop being effective.
+            \item Source reduction - getting rid of some feature of the environment which the mosquito needs - filling potholes, getting rid of standing water, covering drainage systems, getting rid of carbohydrates, unneeded vegetation, draining swamps
+        \end{itemize}
+        \item Lec 13
+        \begin{itemize}
+            \item GMM for vector control
+            \item population suppression vs. population replacement
+            \begin{itemize}
+                \item suppression - reduce fecundity of the population by killing them or getting rid of all the females
+                \item replacement - introduce mosquito resistance to malaria through gene drive (turn the vectors into nonvectors)
+            \end{itemize}
+            \item transgene (in the lab)
+            \begin{itemize}
+                \item need to have an effector gene (affects the phenotype that kills parasite)
+                \item need to have a promoter (turns the gene on at the right time (larval stage, adult stage) in the right place (salivary gland, epidermis lining the stomach, , sex specific, etc))
+            \end{itemize}
+            \item transgene in nature
+            \begin{itemize}
+                \item all of the above, and a gene drive (not normal Mendelian inheritance)
+            \end{itemize}
+            \item How does a gene drive work?
+            \begin{itemize}
+                \item progeny has one copy of transgene and one copy of wild type.
+                \item gene drive cuts the wild type gene and repairs it with the transgene.
+                \item heterozygote turns to homozygote
+                \item ALL future progeny carries the transgene
+            \end{itemize}
+        \end{itemize}
+        \item Lec 14
+        \begin{itemize}
+            \item Ecology of Rickettsiaceae
+            \item hard and soft tick feeding behavior
+            \begin{itemize}
+                \item hard ticks feed once per stage
+                \item hard ticks have different hosts for each stage
+                \item hard ticks feed for a week at a time - they cement themselves to the host, until it gets completely full
+                \item soft ticks feed for 20 min at a time
+            \end{itemize}
+            \item Rickettsiaceae
+            \begin{itemize}
+                \item bacteria
+                \item live inside the cell - not exposed to the host immune system
+            \end{itemize}
+            \item How do horses get infected with Neorickettsia?
+            \begin{itemize}
+                \item acquatic insects on wet grass (Carter: ``I think it's... wet food?'')
+            \end{itemize}
+        \end{itemize}
+        \item Lec 15
+        \begin{itemize}
+            \item Wolbachia
+            \begin{itemize}
+                \item Wolbachia is very common bacteria in insects - often symbiotic
+                \item transmitted maternally (vertical transmission)
+                \item also horizontally transmitted (between different species) - mechanism not understood - but good be good for mosquito control, but could cause problems (evolution people say horizontal transmission is between species, not necessarily within species)
+            \end{itemize}
+            \item Cytoplasmic incompatibility - uninfec/infec female with uninfec/infec male different results.
+            \begin{itemize}
+                \item infected female with whoever, all infected, normal progeny numbers
+                \item infected male with uninfected female, all uninfected, reduced progeny numbers
+            \end{itemize}
+            \item How are Wolbachia spread?
+            \item Bartonian vs.~Fisherian waves
+            \begin{itemize}
+                \item Fisherian (1937) - pulled - more robust spreading
+                \item Bartonian (1979) - threshold - bistable, pushed - easily stopped by barriers to dispersal
+            \end{itemize}
+        \end{itemize}
+        \item Lec 16
+        \begin{itemize}
+            \item genome evolution in malaria vectors in response to vector control
+            \item what is a sibling species?
+            \item ``genomic island of speciation'' - in these islands are genes responsible for reproductive isolation
+            \item adaptive introgression is one gene moving into another which imparts a fitness advantage
+            \item shows up in Anopheles coluzii and An. gambiae
+            \begin{itemize}
+                \item movement of a good (adaptive) gene from one species to another, or one diverged population to another
+                \item what was the gene that moved from coluzii to gambiae?  insecticide resistance.
+            \end{itemize}
+            \item selective sweep
+            \begin{itemize}
+                \item if selection is operating on a gene, there is a loss of heterozygosity around that gene
+            \end{itemize}
+        \end{itemize}
+        \item Lec 17
+        \begin{itemize}
+            \item Leishmaniasis
+            \item visceral, cutaneous, mucocotaneous
+            \item sand flies
+            \item makes the sand flies regurgitate, making it feed more
+            \item sand fly saliva induces blood flow, preventing coagulation, and suppresses the immune system
+        \end{itemize}
+        \item Lec 18
+        \begin{itemize}
+            \item mechanisms of arbovirus emergence
+            \begin{itemize}
+                \item 1992-93 vs 1996 outbreaks of VEEV
+                \begin{itemize}
+                    \item 92-93 - mutation in the virus that changed the pathogenicity to the horses
+                    \item 1996 - caused a switch in the vector making it a really good vector
+                \end{itemize}
+                \item common causes of alphavirus outbreaks?
+                \begin{itemize}
+                    \item either alter pathongenicity, or
+                    \item alters the vector
+                \end{itemize}
+                \item what determines how frequently these outbreaks occur? environmental conditions
+                \item competitive fitness assays?
+                \begin{itemize}
+                    \item co-infect a host with a mixture and see which one wins in the individual
+                    \item if one is over-represented, it is more fit.
+                \end{itemize}
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
